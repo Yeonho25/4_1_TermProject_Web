@@ -1,0 +1,134 @@
+@charset "UTF-8";
+html,
+body,
+section,
+nav,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+span,
+a {
+  font-family: "나눔 고딕", NanumGothic, "돋움", Dotum, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+* {
+  color: white;
+}
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header .logo {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.header img {
+  width: 200px;
+  height: 200px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  background: #263343;
+}
+.navbar .inner-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar .inner-nav .nav-menu {
+  display: flex;
+  flex-direction: row;
+}
+.navbar .inner-nav .nav-menu li {
+  padding: 8px 20px;
+}
+.navbar .inner-nav .nav-menu a {
+  color: white;
+  display: block;
+}
+.navbar .inner-nav .nav-menu li:hover {
+  font-weight: bold;
+  background: #d49466;
+  border-radius: 5px;
+}
+.navbar-toggleBtn {
+  display: none;
+}
+.navbar-toggleBtn img {
+  width: 40px;
+  height: 40px;
+  margin-top: 70px;
+  margin-left: 150px;
+}
+.section {
+  height: 600px;
+  background: rgb(166, 226, 161);
+}
+.section article {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.section .article2 {
+  background: rgb(97, 165, 165);
+}
+footer {
+  height: 100px;
+  background: rgb(226, 180, 212);
+}
+@media (max-width: 768px) {
+  .section article {
+    width: 100%;
+    height: 50%;
+  }
+  .navbar-toggleBtn {
+    display: block;
+  }
+  .navbar {
+    padding: 8px 24px;
+    display: none;
+  }
+  .navbar .inner-nav {
+    flex-direction: column;
+  }
+  .navbar .inner-nav .menu1 {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .navbar .inner-nav .menu2 {
+    font-size: 0.9em;
+  }
+  .navbar .inner-nav .nav-menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar.active {
+    display: block;
+  }
+}
+
+section article {
+  font-size: 30px;
+}
